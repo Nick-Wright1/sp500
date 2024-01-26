@@ -12,8 +12,8 @@ df = df.drop(df.columns[[0]], axis=1)
 available_names = df['Asset Name'].unique()
 available_names.sort()
 
-app = dash.Dash()
-
+# app = dash.Dash()
+app = Dash(__name__)
 server = app.server
 
 app.layout = html.Div([
